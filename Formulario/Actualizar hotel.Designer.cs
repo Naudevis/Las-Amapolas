@@ -122,7 +122,7 @@
             this.btnRegistrarHotel.NoAccentTextColor = System.Drawing.Color.Empty;
             this.btnRegistrarHotel.Size = new System.Drawing.Size(99, 36);
             this.btnRegistrarHotel.TabIndex = 29;
-            this.btnRegistrarHotel.Text = "Registrar";
+            this.btnRegistrarHotel.Text = "Actualizar";
             this.btnRegistrarHotel.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnRegistrarHotel.UseAccentColor = false;
             this.btnRegistrarHotel.UseVisualStyleBackColor = true;
