@@ -21,5 +21,10 @@ namespace Las_Amapolas.Formulario.Registrar
         {
 
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

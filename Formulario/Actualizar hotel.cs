@@ -14,13 +14,13 @@ namespace Las_Amapolas.Formulario.Registrar
     public partial class RegistrarHotel : Form
 
     {
-        List<Hotel> hotelList=new List<Hotel>();
-        string VIdHotel = "";
-        string VNombreHotel = "";
-        string VDireccionHotel = "";
-        string VCiudadHotel = "";
-        string VPaisHotel = "";
-        int VEstrellasHotel = 0;
+        List<Hotel> hotelList = new List<Hotel>();
+        public static string VIdHotel = "";
+        public static string VNombreHotel = "";
+        public static string VDireccionHotel = "";
+        public static string VCiudadHotel = "";
+        public static string VPaisHotel = "";
+        public static int VEstrellasHotel = 0;
         public RegistrarHotel()
         {
             InitializeComponent();
@@ -28,14 +28,6 @@ namespace Las_Amapolas.Formulario.Registrar
 
         private void RegistrarHotel_Load(object sender, EventArgs e)
         {
-
-
-          VIdHotel = "AV456197";
-             VNombreHotel = "Las Amapolas";
-             VDireccionHotel = "100 metros norte del hospital";
-             VCiudadHotel = "Upala";
-             VPaisHotel = "Costa Rica";
-             VEstrellasHotel = 4;
 
             txtIdHotel.Text = VIdHotel;
             txtNombreHotel.Text = VNombreHotel;
@@ -58,6 +50,28 @@ namespace Las_Amapolas.Formulario.Registrar
             VCiudadHotel = txtCiudadHotel.Text;
             VPaisHotel = txtPaisHotel.Text;
             VEstrellasHotel = slEstrellasHotel.Value;
+        }
+
+
+
+        public static bool Vacio()
+        {
+            if (string.IsNullOrEmpty(VIdHotel) &&
+                string.IsNullOrEmpty(VNombreHotel) &&
+                string.IsNullOrEmpty(VDireccionHotel) &&
+                string.IsNullOrEmpty(VCiudadHotel) &&
+                string.IsNullOrEmpty(VPaisHotel)  
+              )
+
+
+            {
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

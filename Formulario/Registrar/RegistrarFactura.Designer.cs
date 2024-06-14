@@ -30,14 +30,14 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox24 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox23 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox22 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
-            this.materialTextBox25 = new MaterialSkin.Controls.MaterialTextBox2();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateEmisionFatura = new System.Windows.Forms.DateTimePicker();
+            this.txtMontoTotalFatura = new MaterialSkin.Controls.MaterialTextBox2();
+            this.btnResgistrarFactura = new MaterialSkin.Controls.MaterialButton();
+            this.txtEmpleadoIdFatura = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtClienteIdFatura = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtReservaIdFatura = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtIdFatura = new MaterialSkin.Controls.MaterialTextBox2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +48,7 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(45, 44);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 20);
+            this.label8.Size = new System.Drawing.Size(205, 29);
             this.label8.TabIndex = 18;
             this.label8.Text = "Registrar factura";
             // 
@@ -56,198 +56,198 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Controls.Add(this.materialTextBox25);
-            this.panel1.Controls.Add(this.materialButton1);
-            this.panel1.Controls.Add(this.materialTextBox24);
-            this.panel1.Controls.Add(this.materialTextBox23);
-            this.panel1.Controls.Add(this.materialTextBox22);
-            this.panel1.Controls.Add(this.materialTextBox21);
-            this.panel1.Location = new System.Drawing.Point(40, 71);
+            this.panel1.Controls.Add(this.dateEmisionFatura);
+            this.panel1.Controls.Add(this.txtMontoTotalFatura);
+            this.panel1.Controls.Add(this.btnResgistrarFactura);
+            this.panel1.Controls.Add(this.txtEmpleadoIdFatura);
+            this.panel1.Controls.Add(this.txtClienteIdFatura);
+            this.panel1.Controls.Add(this.txtReservaIdFatura);
+            this.panel1.Controls.Add(this.txtIdFatura);
+            this.panel1.Location = new System.Drawing.Point(40, 76);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(748, 335);
+            this.panel1.Size = new System.Drawing.Size(748, 330);
             this.panel1.TabIndex = 17;
-            // 
-            // materialButton1
-            // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.HighEmphasis = true;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(522, 284);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.Size = new System.Drawing.Size(99, 36);
-            this.materialButton1.TabIndex = 29;
-            this.materialButton1.Text = "Registrar";
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
-            // 
-            // materialTextBox24
-            // 
-            this.materialTextBox24.AnimateReadOnly = false;
-            this.materialTextBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox24.Depth = 0;
-            this.materialTextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox24.HideSelection = true;
-            this.materialTextBox24.Hint = "EmpleadoId";
-            this.materialTextBox24.LeadingIcon = null;
-            this.materialTextBox24.Location = new System.Drawing.Point(18, 115);
-            this.materialTextBox24.MaxLength = 32767;
-            this.materialTextBox24.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox24.Name = "materialTextBox24";
-            this.materialTextBox24.PasswordChar = '\0';
-            this.materialTextBox24.PrefixSuffixText = null;
-            this.materialTextBox24.ReadOnly = false;
-            this.materialTextBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox24.SelectedText = "";
-            this.materialTextBox24.SelectionLength = 0;
-            this.materialTextBox24.SelectionStart = 0;
-            this.materialTextBox24.ShortcutsEnabled = true;
-            this.materialTextBox24.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox24.TabIndex = 25;
-            this.materialTextBox24.TabStop = false;
-            this.materialTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox24.TrailingIcon = null;
-            this.materialTextBox24.UseSystemPasswordChar = false;
-            // 
-            // materialTextBox23
-            // 
-            this.materialTextBox23.AnimateReadOnly = false;
-            this.materialTextBox23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox23.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox23.Depth = 0;
-            this.materialTextBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox23.HideSelection = true;
-            this.materialTextBox23.Hint = "ClienteId";
-            this.materialTextBox23.LeadingIcon = null;
-            this.materialTextBox23.Location = new System.Drawing.Point(18, 197);
-            this.materialTextBox23.MaxLength = 32767;
-            this.materialTextBox23.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox23.Name = "materialTextBox23";
-            this.materialTextBox23.PasswordChar = '\0';
-            this.materialTextBox23.PrefixSuffixText = null;
-            this.materialTextBox23.ReadOnly = false;
-            this.materialTextBox23.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox23.SelectedText = "";
-            this.materialTextBox23.SelectionLength = 0;
-            this.materialTextBox23.SelectionStart = 0;
-            this.materialTextBox23.ShortcutsEnabled = true;
-            this.materialTextBox23.Size = new System.Drawing.Size(342, 48);
-            this.materialTextBox23.TabIndex = 24;
-            this.materialTextBox23.TabStop = false;
-            this.materialTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox23.TrailingIcon = null;
-            this.materialTextBox23.UseSystemPasswordChar = false;
-            // 
-            // materialTextBox22
-            // 
-            this.materialTextBox22.AnimateReadOnly = false;
-            this.materialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox22.Depth = 0;
-            this.materialTextBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox22.HideSelection = true;
-            this.materialTextBox22.Hint = "ReservaId";
-            this.materialTextBox22.LeadingIcon = null;
-            this.materialTextBox22.Location = new System.Drawing.Point(429, 126);
-            this.materialTextBox22.MaxLength = 32767;
-            this.materialTextBox22.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox22.Name = "materialTextBox22";
-            this.materialTextBox22.PasswordChar = '\0';
-            this.materialTextBox22.PrefixSuffixText = null;
-            this.materialTextBox22.ReadOnly = false;
-            this.materialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox22.SelectedText = "";
-            this.materialTextBox22.SelectionLength = 0;
-            this.materialTextBox22.SelectionStart = 0;
-            this.materialTextBox22.ShortcutsEnabled = true;
-            this.materialTextBox22.Size = new System.Drawing.Size(282, 48);
-            this.materialTextBox22.TabIndex = 23;
-            this.materialTextBox22.TabStop = false;
-            this.materialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox22.TrailingIcon = null;
-            this.materialTextBox22.UseSystemPasswordChar = false;
-            // 
-            // materialTextBox21
-            // 
-            this.materialTextBox21.AnimateReadOnly = false;
-            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.HideSelection = true;
-            this.materialTextBox21.Hint = "ID";
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(18, 28);
-            this.materialTextBox21.MaxLength = 32767;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.PasswordChar = '\0';
-            this.materialTextBox21.PrefixSuffixText = null;
-            this.materialTextBox21.ReadOnly = false;
-            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox21.SelectedText = "";
-            this.materialTextBox21.SelectionLength = 0;
-            this.materialTextBox21.SelectionStart = 0;
-            this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(160, 48);
-            this.materialTextBox21.TabIndex = 22;
-            this.materialTextBox21.TabStop = false;
-            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox21.TrailingIcon = null;
-            this.materialTextBox21.UseSystemPasswordChar = false;
-            // 
-            // materialTextBox25
-            // 
-            this.materialTextBox25.AnimateReadOnly = false;
-            this.materialTextBox25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox25.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox25.Depth = 0;
-            this.materialTextBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox25.HideSelection = true;
-            this.materialTextBox25.Hint = "Monto Total";
-            this.materialTextBox25.LeadingIcon = null;
-            this.materialTextBox25.Location = new System.Drawing.Point(429, 197);
-            this.materialTextBox25.MaxLength = 32767;
-            this.materialTextBox25.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox25.Name = "materialTextBox25";
-            this.materialTextBox25.PasswordChar = '\0';
-            this.materialTextBox25.PrefixSuffixText = null;
-            this.materialTextBox25.ReadOnly = false;
-            this.materialTextBox25.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox25.SelectedText = "";
-            this.materialTextBox25.SelectionLength = 0;
-            this.materialTextBox25.SelectionStart = 0;
-            this.materialTextBox25.ShortcutsEnabled = true;
-            this.materialTextBox25.Size = new System.Drawing.Size(250, 48);
-            this.materialTextBox25.TabIndex = 30;
-            this.materialTextBox25.TabStop = false;
-            this.materialTextBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox25.TrailingIcon = null;
-            this.materialTextBox25.UseSystemPasswordChar = false;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(426, 28);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(352, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(170, 31);
             this.label1.TabIndex = 46;
             this.label1.Text = "Fecha emision";
             // 
-            // dateTimePicker1
+            // dateEmisionFatura
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(429, 62);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(300, 24);
-            this.dateTimePicker1.TabIndex = 45;
+            this.dateEmisionFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateEmisionFatura.Location = new System.Drawing.Point(357, 62);
+            this.dateEmisionFatura.Name = "dateEmisionFatura";
+            this.dateEmisionFatura.Size = new System.Drawing.Size(388, 30);
+            this.dateEmisionFatura.TabIndex = 45;
+            // 
+            // txtMontoTotalFatura
+            // 
+            this.txtMontoTotalFatura.AnimateReadOnly = false;
+            this.txtMontoTotalFatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtMontoTotalFatura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtMontoTotalFatura.Depth = 0;
+            this.txtMontoTotalFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtMontoTotalFatura.HideSelection = true;
+            this.txtMontoTotalFatura.Hint = "Monto Total";
+            this.txtMontoTotalFatura.LeadingIcon = null;
+            this.txtMontoTotalFatura.Location = new System.Drawing.Point(357, 197);
+            this.txtMontoTotalFatura.MaxLength = 32767;
+            this.txtMontoTotalFatura.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtMontoTotalFatura.Name = "txtMontoTotalFatura";
+            this.txtMontoTotalFatura.PasswordChar = '\0';
+            this.txtMontoTotalFatura.PrefixSuffixText = null;
+            this.txtMontoTotalFatura.ReadOnly = false;
+            this.txtMontoTotalFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtMontoTotalFatura.SelectedText = "";
+            this.txtMontoTotalFatura.SelectionLength = 0;
+            this.txtMontoTotalFatura.SelectionStart = 0;
+            this.txtMontoTotalFatura.ShortcutsEnabled = true;
+            this.txtMontoTotalFatura.Size = new System.Drawing.Size(250, 48);
+            this.txtMontoTotalFatura.TabIndex = 30;
+            this.txtMontoTotalFatura.TabStop = false;
+            this.txtMontoTotalFatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtMontoTotalFatura.TrailingIcon = null;
+            this.txtMontoTotalFatura.UseSystemPasswordChar = false;
+            // 
+            // btnResgistrarFactura
+            // 
+            this.btnResgistrarFactura.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnResgistrarFactura.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.btnResgistrarFactura.Depth = 0;
+            this.btnResgistrarFactura.HighEmphasis = true;
+            this.btnResgistrarFactura.Icon = null;
+            this.btnResgistrarFactura.Location = new System.Drawing.Point(522, 284);
+            this.btnResgistrarFactura.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnResgistrarFactura.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnResgistrarFactura.Name = "btnResgistrarFactura";
+            this.btnResgistrarFactura.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.btnResgistrarFactura.Size = new System.Drawing.Size(99, 36);
+            this.btnResgistrarFactura.TabIndex = 29;
+            this.btnResgistrarFactura.Text = "Registrar";
+            this.btnResgistrarFactura.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.btnResgistrarFactura.UseAccentColor = false;
+            this.btnResgistrarFactura.UseVisualStyleBackColor = true;
+            // 
+            // txtEmpleadoIdFatura
+            // 
+            this.txtEmpleadoIdFatura.AnimateReadOnly = false;
+            this.txtEmpleadoIdFatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEmpleadoIdFatura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEmpleadoIdFatura.Depth = 0;
+            this.txtEmpleadoIdFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmpleadoIdFatura.HideSelection = true;
+            this.txtEmpleadoIdFatura.Hint = "EmpleadoId";
+            this.txtEmpleadoIdFatura.LeadingIcon = null;
+            this.txtEmpleadoIdFatura.Location = new System.Drawing.Point(18, 115);
+            this.txtEmpleadoIdFatura.MaxLength = 32767;
+            this.txtEmpleadoIdFatura.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEmpleadoIdFatura.Name = "txtEmpleadoIdFatura";
+            this.txtEmpleadoIdFatura.PasswordChar = '\0';
+            this.txtEmpleadoIdFatura.PrefixSuffixText = null;
+            this.txtEmpleadoIdFatura.ReadOnly = false;
+            this.txtEmpleadoIdFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtEmpleadoIdFatura.SelectedText = "";
+            this.txtEmpleadoIdFatura.SelectionLength = 0;
+            this.txtEmpleadoIdFatura.SelectionStart = 0;
+            this.txtEmpleadoIdFatura.ShortcutsEnabled = true;
+            this.txtEmpleadoIdFatura.Size = new System.Drawing.Size(250, 48);
+            this.txtEmpleadoIdFatura.TabIndex = 25;
+            this.txtEmpleadoIdFatura.TabStop = false;
+            this.txtEmpleadoIdFatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEmpleadoIdFatura.TrailingIcon = null;
+            this.txtEmpleadoIdFatura.UseSystemPasswordChar = false;
+            // 
+            // txtClienteIdFatura
+            // 
+            this.txtClienteIdFatura.AnimateReadOnly = false;
+            this.txtClienteIdFatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtClienteIdFatura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtClienteIdFatura.Depth = 0;
+            this.txtClienteIdFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtClienteIdFatura.HideSelection = true;
+            this.txtClienteIdFatura.Hint = "ClienteId";
+            this.txtClienteIdFatura.LeadingIcon = null;
+            this.txtClienteIdFatura.Location = new System.Drawing.Point(18, 197);
+            this.txtClienteIdFatura.MaxLength = 32767;
+            this.txtClienteIdFatura.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtClienteIdFatura.Name = "txtClienteIdFatura";
+            this.txtClienteIdFatura.PasswordChar = '\0';
+            this.txtClienteIdFatura.PrefixSuffixText = null;
+            this.txtClienteIdFatura.ReadOnly = false;
+            this.txtClienteIdFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtClienteIdFatura.SelectedText = "";
+            this.txtClienteIdFatura.SelectionLength = 0;
+            this.txtClienteIdFatura.SelectionStart = 0;
+            this.txtClienteIdFatura.ShortcutsEnabled = true;
+            this.txtClienteIdFatura.Size = new System.Drawing.Size(250, 48);
+            this.txtClienteIdFatura.TabIndex = 24;
+            this.txtClienteIdFatura.TabStop = false;
+            this.txtClienteIdFatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtClienteIdFatura.TrailingIcon = null;
+            this.txtClienteIdFatura.UseSystemPasswordChar = false;
+            // 
+            // txtReservaIdFatura
+            // 
+            this.txtReservaIdFatura.AnimateReadOnly = false;
+            this.txtReservaIdFatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtReservaIdFatura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtReservaIdFatura.Depth = 0;
+            this.txtReservaIdFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtReservaIdFatura.HideSelection = true;
+            this.txtReservaIdFatura.Hint = "ReservaId";
+            this.txtReservaIdFatura.LeadingIcon = null;
+            this.txtReservaIdFatura.Location = new System.Drawing.Point(357, 115);
+            this.txtReservaIdFatura.MaxLength = 32767;
+            this.txtReservaIdFatura.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtReservaIdFatura.Name = "txtReservaIdFatura";
+            this.txtReservaIdFatura.PasswordChar = '\0';
+            this.txtReservaIdFatura.PrefixSuffixText = null;
+            this.txtReservaIdFatura.ReadOnly = false;
+            this.txtReservaIdFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtReservaIdFatura.SelectedText = "";
+            this.txtReservaIdFatura.SelectionLength = 0;
+            this.txtReservaIdFatura.SelectionStart = 0;
+            this.txtReservaIdFatura.ShortcutsEnabled = true;
+            this.txtReservaIdFatura.Size = new System.Drawing.Size(282, 48);
+            this.txtReservaIdFatura.TabIndex = 23;
+            this.txtReservaIdFatura.TabStop = false;
+            this.txtReservaIdFatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtReservaIdFatura.TrailingIcon = null;
+            this.txtReservaIdFatura.UseSystemPasswordChar = false;
+            // 
+            // txtIdFatura
+            // 
+            this.txtIdFatura.AnimateReadOnly = false;
+            this.txtIdFatura.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtIdFatura.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtIdFatura.Depth = 0;
+            this.txtIdFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtIdFatura.HideSelection = true;
+            this.txtIdFatura.Hint = "ID";
+            this.txtIdFatura.LeadingIcon = null;
+            this.txtIdFatura.Location = new System.Drawing.Point(18, 28);
+            this.txtIdFatura.MaxLength = 32767;
+            this.txtIdFatura.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtIdFatura.Name = "txtIdFatura";
+            this.txtIdFatura.PasswordChar = '\0';
+            this.txtIdFatura.PrefixSuffixText = null;
+            this.txtIdFatura.ReadOnly = false;
+            this.txtIdFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtIdFatura.SelectedText = "";
+            this.txtIdFatura.SelectionLength = 0;
+            this.txtIdFatura.SelectionStart = 0;
+            this.txtIdFatura.ShortcutsEnabled = true;
+            this.txtIdFatura.Size = new System.Drawing.Size(160, 48);
+            this.txtIdFatura.TabIndex = 22;
+            this.txtIdFatura.TabStop = false;
+            this.txtIdFatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtIdFatura.TrailingIcon = null;
+            this.txtIdFatura.UseSystemPasswordChar = false;
             // 
             // RegistrarFactura
             // 
@@ -269,13 +269,13 @@
 
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel1;
-        private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox24;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox23;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox22;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox25;
+        private MaterialSkin.Controls.MaterialButton btnResgistrarFactura;
+        private MaterialSkin.Controls.MaterialTextBox2 txtEmpleadoIdFatura;
+        private MaterialSkin.Controls.MaterialTextBox2 txtClienteIdFatura;
+        private MaterialSkin.Controls.MaterialTextBox2 txtReservaIdFatura;
+        private MaterialSkin.Controls.MaterialTextBox2 txtIdFatura;
+        private MaterialSkin.Controls.MaterialTextBox2 txtMontoTotalFatura;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateEmisionFatura;
     }
 }

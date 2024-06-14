@@ -101,9 +101,9 @@
             this.btnLlamarHabitacion.BackColor = System.Drawing.Color.RoyalBlue;
             this.btnLlamarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLlamarHabitacion.ForeColor = System.Drawing.Color.White;
-            this.btnLlamarHabitacion.Location = new System.Drawing.Point(665, 192);
+            this.btnLlamarHabitacion.Location = new System.Drawing.Point(655, 183);
             this.btnLlamarHabitacion.Name = "btnLlamarHabitacion";
-            this.btnLlamarHabitacion.Size = new System.Drawing.Size(33, 29);
+            this.btnLlamarHabitacion.Size = new System.Drawing.Size(43, 40);
             this.btnLlamarHabitacion.TabIndex = 30;
             this.btnLlamarHabitacion.Text = "+";
             this.btnLlamarHabitacion.UseVisualStyleBackColor = false;
@@ -120,7 +120,7 @@
             this.btnRegistrarHotel.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnRegistrarHotel.Name = "btnRegistrarHotel";
             this.btnRegistrarHotel.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.btnRegistrarHotel.Size = new System.Drawing.Size(99, 36);
+            this.btnRegistrarHotel.Size = new System.Drawing.Size(109, 36);
             this.btnRegistrarHotel.TabIndex = 29;
             this.btnRegistrarHotel.Text = "Actualizar";
             this.btnRegistrarHotel.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
@@ -280,7 +280,7 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(21, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(134, 20);
+            this.label8.Size = new System.Drawing.Size(191, 29);
             this.label8.TabIndex = 16;
             this.label8.Text = "Actualizar hotel";
             // 

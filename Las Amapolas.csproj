@@ -39,6 +39,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +63,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario\FondoInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\FondoInicio.Designer.cs">
+      <DependentUpon>FondoInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario\Las Amapolas.cs">
       <SubType>Form</SubType>
@@ -119,6 +126,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulario\FondoInicio.resx">
+      <DependentUpon>FondoInicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulario\Las Amapolas.resx">
       <DependentUpon>Las Amapolas.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +164,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -169,6 +180,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\5dd26cd1-d4c1-41d9-9f0e-77fbeca2a4b8_16-9-discover-aspect-ratio_default_0.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

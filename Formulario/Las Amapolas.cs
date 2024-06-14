@@ -28,13 +28,39 @@ namespace Las_Amapolas.Formulario
         private void Las_Amapolas_Load(object sender, EventArgs e)
         {
 
+            contenedor.Controls.Clear();
+            if (RegistrarHotel.Vacio())
+            {
+                RegistrarHotel.VIdHotel = "AV456197";
+                RegistrarHotel.VNombreHotel = "Las Amapolas";
+                RegistrarHotel.VDireccionHotel = "Puntarenas, Jacó";
+                RegistrarHotel.VCiudadHotel = "Jacó";
+                RegistrarHotel.VPaisHotel = "Costa Rica";
+                RegistrarHotel.VEstrellasHotel = 4;
+            }
+            FondoInicio fondoInicio = new FondoInicio();
+
+            // Le indicamos que no es el principal (sino que es secundario)
+            fondoInicio.TopLevel = false;
+            // Permite hacer scroll en caso de desbordamiento de info
+            fondoInicio.AutoScroll = true;
+            // Quitamos
+            fondoInicio.FormBorderStyle = FormBorderStyle.None;
+            fondoInicio.Dock = DockStyle.Fill;
+            contenedor.Controls.Add(fondoInicio);
+            fondoInicio.Show();
+
+
+
+
+
         }
 
         private void registrarHotelToolStripMenuItem_Click(object sender, EventArgs e)
         {
             contenedor.Controls.Clear();
             RegistrarHotel registrarHotel = new RegistrarHotel();
-
+          
             // Le indicamos que no es el principal (sino que es secundario)
             registrarHotel.TopLevel = false;
             // Permite hacer scroll en caso de desbordamiento de info
@@ -149,6 +175,23 @@ namespace Las_Amapolas.Formulario
             contenedor.Controls.Add(registrarEmpleado);
             registrarEmpleado.Show();
 
+        }
+
+        private void nicioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            contenedor.Controls.Clear();
+
+            FondoInicio fondoInicio = new FondoInicio();
+
+            // Le indicamos que no es el principal (sino que es secundario)
+            fondoInicio.TopLevel = false;
+            // Permite hacer scroll en caso de desbordamiento de info
+            fondoInicio.AutoScroll = true;
+            // Quitamos
+            fondoInicio.FormBorderStyle = FormBorderStyle.None;
+            fondoInicio.Dock = DockStyle.Fill;
+            contenedor.Controls.Add(fondoInicio);
+            fondoInicio.Show();
         }
     }
 }
