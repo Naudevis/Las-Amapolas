@@ -14,13 +14,7 @@ namespace Las_Amapolas.Formulario.Registrar
     public partial class RegistrarHotel : Form
 
     {
-        List<Hotel> hotelList = new List<Hotel>();
-        public static string VIdHotel = "";
-        public static string VNombreHotel = "";
-        public static string VDireccionHotel = "";
-        public static string VCiudadHotel = "";
-        public static string VPaisHotel = "";
-        public static int VEstrellasHotel = 0;
+
         public RegistrarHotel()
         {
             InitializeComponent();
@@ -29,12 +23,14 @@ namespace Las_Amapolas.Formulario.Registrar
         private void RegistrarHotel_Load(object sender, EventArgs e)
         {
 
-            txtIdHotel.Text = VIdHotel;
-            txtNombreHotel.Text = VNombreHotel;
-            txtDirecionHotel.Text = VDireccionHotel;
-            txtCiudadHotel.Text = VCiudadHotel;
-            txtPaisHotel.Text = VPaisHotel;
-            slEstrellasHotel.Value = VEstrellasHotel;
+            txtIdHotel.Text = Login.objHotel.HotelId;
+
+
+            txtNombreHotel.Text = Login.objHotel.Nombre;
+            txtDirecionHotel.Text = Login.objHotel.Direccion;
+            txtCiudadHotel.Text = Login.objHotel.Ciudad;
+            txtPaisHotel.Text = Login.objHotel.Pais;
+            slEstrellasHotel.Value = Login.objHotel.Estrellas;
 
 
 
@@ -44,33 +40,21 @@ namespace Las_Amapolas.Formulario.Registrar
         {
 
 
-            VIdHotel = txtIdHotel.Text;
-            VNombreHotel = txtNombreHotel.Text;
-            VDireccionHotel = txtDirecionHotel.Text;
-            VCiudadHotel = txtCiudadHotel.Text;
-            VPaisHotel = txtPaisHotel.Text;
-            VEstrellasHotel = slEstrellasHotel.Value;
+           Login.objHotel.Nombre = txtNombreHotel.Text;
+           Login.objHotel.Direccion = txtDirecionHotel.Text;
+            Login.objHotel.Ciudad = txtCiudadHotel.Text;
+           Login.objHotel.Pais = txtPaisHotel.Text;
+            Login.objHotel.Estrellas = slEstrellasHotel.Value;
         }
 
 
-
-        public static bool Vacio()
+        private void cbHabitacionesHotel_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(VIdHotel) &&
-                string.IsNullOrEmpty(VNombreHotel) &&
-                string.IsNullOrEmpty(VDireccionHotel) &&
-                string.IsNullOrEmpty(VCiudadHotel) &&
-                string.IsNullOrEmpty(VPaisHotel)  
-              )
-
-
+            cbHabitacionesHotel.Items.Clear();
+            foreach (Habitación habitacion in Login.listHabitaciones)
             {
+                cbHabitacionesHotel.Items.Add(habitacion.HabitacionId);
 
-                return true;
-            }
-            else
-            {
-                return false;
             }
         }
     }

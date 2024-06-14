@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Las_Amapolas.Clases
 {
-    internal class Reserva
+    public class Reserva
     {
         public string Id { get; set; }
         public string ClienteId { get; set; }

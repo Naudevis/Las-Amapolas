@@ -30,13 +30,14 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLlamarRegistrarReservación = new System.Windows.Forms.Button();
+            this.cbMetodoPago = new MaterialSkin.Controls.MaterialComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.datePago = new System.Windows.Forms.DateTimePicker();
             this.btnRegistrarPago = new MaterialSkin.Controls.MaterialButton();
             this.txtMontoPago = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtReservaIdPago = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtIdPago = new MaterialSkin.Controls.MaterialTextBox2();
-            this.cbMetodoPago = new MaterialSkin.Controls.MaterialComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,13 +48,14 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(21, 22);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(186, 29);
+            this.label8.Size = new System.Drawing.Size(128, 20);
             this.label8.TabIndex = 18;
             this.label8.Text = "Registrar pago";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnLlamarRegistrarReservación);
             this.panel1.Controls.Add(this.cbMetodoPago);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.datePago);
@@ -66,6 +68,41 @@
             this.panel1.Size = new System.Drawing.Size(671, 304);
             this.panel1.TabIndex = 17;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnLlamarRegistrarReservación
+            // 
+            this.btnLlamarRegistrarReservación.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnLlamarRegistrarReservación.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLlamarRegistrarReservación.ForeColor = System.Drawing.Color.White;
+            this.btnLlamarRegistrarReservación.Location = new System.Drawing.Point(194, 124);
+            this.btnLlamarRegistrarReservación.Name = "btnLlamarRegistrarReservación";
+            this.btnLlamarRegistrarReservación.Size = new System.Drawing.Size(43, 40);
+            this.btnLlamarRegistrarReservación.TabIndex = 31;
+            this.btnLlamarRegistrarReservación.Text = "+";
+            this.btnLlamarRegistrarReservación.UseVisualStyleBackColor = false;
+            // 
+            // cbMetodoPago
+            // 
+            this.cbMetodoPago.AutoResize = false;
+            this.cbMetodoPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cbMetodoPago.Depth = 0;
+            this.cbMetodoPago.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cbMetodoPago.DropDownHeight = 174;
+            this.cbMetodoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMetodoPago.DropDownWidth = 121;
+            this.cbMetodoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.cbMetodoPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cbMetodoPago.FormattingEnabled = true;
+            this.cbMetodoPago.Hint = "Metodo Pago";
+            this.cbMetodoPago.IntegralHeight = false;
+            this.cbMetodoPago.ItemHeight = 43;
+            this.cbMetodoPago.Location = new System.Drawing.Point(284, 115);
+            this.cbMetodoPago.MaxDropDownItems = 4;
+            this.cbMetodoPago.MouseState = MaterialSkin.MouseState.OUT;
+            this.cbMetodoPago.Name = "cbMetodoPago";
+            this.cbMetodoPago.Size = new System.Drawing.Size(261, 49);
+            this.cbMetodoPago.StartIndex = 0;
+            this.cbMetodoPago.TabIndex = 45;
             // 
             // label1
             // 
@@ -81,7 +118,7 @@
             this.datePago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datePago.Location = new System.Drawing.Point(282, 62);
             this.datePago.Name = "datePago";
-            this.datePago.Size = new System.Drawing.Size(376, 30);
+            this.datePago.Size = new System.Drawing.Size(376, 23);
             this.datePago.TabIndex = 42;
             // 
             // btnRegistrarPago
@@ -102,6 +139,7 @@
             this.btnRegistrarPago.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnRegistrarPago.UseAccentColor = false;
             this.btnRegistrarPago.UseVisualStyleBackColor = true;
+            this.btnRegistrarPago.Click += new System.EventHandler(this.btnRegistrarPago_Click);
             // 
             // txtMontoPago
             // 
@@ -190,29 +228,6 @@
             this.txtIdPago.TrailingIcon = null;
             this.txtIdPago.UseSystemPasswordChar = false;
             // 
-            // cbMetodoPago
-            // 
-            this.cbMetodoPago.AutoResize = false;
-            this.cbMetodoPago.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbMetodoPago.Depth = 0;
-            this.cbMetodoPago.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbMetodoPago.DropDownHeight = 174;
-            this.cbMetodoPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMetodoPago.DropDownWidth = 121;
-            this.cbMetodoPago.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbMetodoPago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbMetodoPago.FormattingEnabled = true;
-            this.cbMetodoPago.Hint = "Metodo Pago";
-            this.cbMetodoPago.IntegralHeight = false;
-            this.cbMetodoPago.ItemHeight = 43;
-            this.cbMetodoPago.Location = new System.Drawing.Point(284, 115);
-            this.cbMetodoPago.MaxDropDownItems = 4;
-            this.cbMetodoPago.MouseState = MaterialSkin.MouseState.OUT;
-            this.cbMetodoPago.Name = "cbMetodoPago";
-            this.cbMetodoPago.Size = new System.Drawing.Size(261, 49);
-            this.cbMetodoPago.StartIndex = 0;
-            this.cbMetodoPago.TabIndex = 45;
-            // 
             // RegistrarPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,5 +255,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker datePago;
         private MaterialSkin.Controls.MaterialComboBox cbMetodoPago;
+        private System.Windows.Forms.Button btnLlamarRegistrarReservación;
     }
 }

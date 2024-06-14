@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Las_Amapolas.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,15 @@ namespace Las_Amapolas.Formulario.Registrar
         private void materialTextBox23_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRegistrarCliente_Click(object sender, EventArgs e)
+        {
+            Cliente ClienteTemporal = new Cliente(
+                txtIdCliente.Text, txtNombreCliente.Text, txtApellidoCliente.Text, txtEmailCliente.Text, Convert.ToInt32(txtTelefonoCliente.Text),  txtDireccionCliente.Text);
+
+
+            Login.listClientes.Add(ClienteTemporal);
         }
     }
 }

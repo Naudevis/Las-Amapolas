@@ -31,7 +31,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbHabitacionesHotel = new MaterialSkin.Controls.MaterialComboBox();
             this.slEstrellasHotel = new MaterialSkin.Controls.MaterialSlider();
-            this.btnLlamarHabitacion = new System.Windows.Forms.Button();
+            this.btnLlamarRegistrarHabitacion = new System.Windows.Forms.Button();
             this.btnRegistrarHotel = new MaterialSkin.Controls.MaterialButton();
             this.txtPaisHotel = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtCiudadHotel = new MaterialSkin.Controls.MaterialTextBox2();
@@ -47,7 +47,7 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.cbHabitacionesHotel);
             this.panel1.Controls.Add(this.slEstrellasHotel);
-            this.panel1.Controls.Add(this.btnLlamarHabitacion);
+            this.panel1.Controls.Add(this.btnLlamarRegistrarHabitacion);
             this.panel1.Controls.Add(this.btnRegistrarHotel);
             this.panel1.Controls.Add(this.txtPaisHotel);
             this.panel1.Controls.Add(this.txtCiudadHotel);
@@ -81,6 +81,7 @@
             this.cbHabitacionesHotel.Size = new System.Drawing.Size(254, 49);
             this.cbHabitacionesHotel.StartIndex = 0;
             this.cbHabitacionesHotel.TabIndex = 32;
+            this.cbHabitacionesHotel.Click += new System.EventHandler(this.cbHabitacionesHotel_Click);
             // 
             // slEstrellasHotel
             // 
@@ -96,17 +97,17 @@
             this.slEstrellasHotel.Value = 5;
             this.slEstrellasHotel.ValueMax = 5;
             // 
-            // btnLlamarHabitacion
+            // btnLlamarRegistrarHabitacion
             // 
-            this.btnLlamarHabitacion.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnLlamarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLlamarHabitacion.ForeColor = System.Drawing.Color.White;
-            this.btnLlamarHabitacion.Location = new System.Drawing.Point(655, 183);
-            this.btnLlamarHabitacion.Name = "btnLlamarHabitacion";
-            this.btnLlamarHabitacion.Size = new System.Drawing.Size(43, 40);
-            this.btnLlamarHabitacion.TabIndex = 30;
-            this.btnLlamarHabitacion.Text = "+";
-            this.btnLlamarHabitacion.UseVisualStyleBackColor = false;
+            this.btnLlamarRegistrarHabitacion.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnLlamarRegistrarHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLlamarRegistrarHabitacion.ForeColor = System.Drawing.Color.White;
+            this.btnLlamarRegistrarHabitacion.Location = new System.Drawing.Point(655, 183);
+            this.btnLlamarRegistrarHabitacion.Name = "btnLlamarRegistrarHabitacion";
+            this.btnLlamarRegistrarHabitacion.Size = new System.Drawing.Size(43, 40);
+            this.btnLlamarRegistrarHabitacion.TabIndex = 30;
+            this.btnLlamarRegistrarHabitacion.Text = "+";
+            this.btnLlamarRegistrarHabitacion.UseVisualStyleBackColor = false;
             // 
             // btnRegistrarHotel
             // 
@@ -280,7 +281,7 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(21, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(191, 29);
+            this.label8.Size = new System.Drawing.Size(134, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Actualizar hotel";
             // 
@@ -304,7 +305,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnLlamarHabitacion;
+        private System.Windows.Forms.Button btnLlamarRegistrarHabitacion;
         private MaterialSkin.Controls.MaterialButton btnRegistrarHotel;
         private MaterialSkin.Controls.MaterialTextBox2 txtPaisHotel;
         private MaterialSkin.Controls.MaterialTextBox2 txtCiudadHotel;

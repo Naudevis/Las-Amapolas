@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Las_Amapolas.Formulario.Registrar;
+using Las_Amapolas.Clases;
 
 namespace Las_Amapolas.Formulario
 {
@@ -28,17 +29,10 @@ namespace Las_Amapolas.Formulario
 
         private void Las_Amapolas_Load(object sender, EventArgs e)
         {
+ 
 
             contenedor.Controls.Clear();
-            if (RegistrarHotel.Vacio())
-            {
-                RegistrarHotel.VIdHotel = "AV456197";
-                RegistrarHotel.VNombreHotel = "Las Amapolas";
-                RegistrarHotel.VDireccionHotel = "Puntarenas, Jacó";
-                RegistrarHotel.VCiudadHotel = "Jacó";
-                RegistrarHotel.VPaisHotel = "Costa Rica";
-                RegistrarHotel.VEstrellasHotel = 4;
-            }
+
             FondoInicio fondoInicio = new FondoInicio();
 
             // Le indicamos que no es el principal (sino que es secundario)
@@ -56,6 +50,7 @@ namespace Las_Amapolas.Formulario
 
 
         }
+
 
         private void registrarHotelToolStripMenuItem_Click(object sender, EventArgs e)
         {

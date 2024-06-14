@@ -30,13 +30,13 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cbHoteIdHabitacion = new MaterialSkin.Controls.MaterialComboBox();
             this.cbTipoHabitacion = new MaterialSkin.Controls.MaterialComboBox();
             this.slCapacidadHabitacion = new MaterialSkin.Controls.MaterialSlider();
             this.btnRegistrarHabitacion = new MaterialSkin.Controls.MaterialButton();
             this.txtPrecioHabitacion = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtNumeroHabitacion = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtIdHabitacion = new MaterialSkin.Controls.MaterialTextBox2();
+            this.txtHotelIdHabitacion = new MaterialSkin.Controls.MaterialTextBox2();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.cbHoteIdHabitacion);
+            this.panel1.Controls.Add(this.txtHotelIdHabitacion);
             this.panel1.Controls.Add(this.cbTipoHabitacion);
             this.panel1.Controls.Add(this.slCapacidadHabitacion);
             this.panel1.Controls.Add(this.btnRegistrarHabitacion);
@@ -65,29 +65,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(721, 308);
             this.panel1.TabIndex = 17;
-            // 
-            // cbHoteIdHabitacion
-            // 
-            this.cbHoteIdHabitacion.AutoResize = false;
-            this.cbHoteIdHabitacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbHoteIdHabitacion.Depth = 0;
-            this.cbHoteIdHabitacion.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbHoteIdHabitacion.DropDownHeight = 174;
-            this.cbHoteIdHabitacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbHoteIdHabitacion.DropDownWidth = 121;
-            this.cbHoteIdHabitacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbHoteIdHabitacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbHoteIdHabitacion.FormattingEnabled = true;
-            this.cbHoteIdHabitacion.Hint = "HotelId";
-            this.cbHoteIdHabitacion.IntegralHeight = false;
-            this.cbHoteIdHabitacion.ItemHeight = 43;
-            this.cbHoteIdHabitacion.Location = new System.Drawing.Point(395, 182);
-            this.cbHoteIdHabitacion.MaxDropDownItems = 4;
-            this.cbHoteIdHabitacion.MouseState = MaterialSkin.MouseState.OUT;
-            this.cbHoteIdHabitacion.Name = "cbHoteIdHabitacion";
-            this.cbHoteIdHabitacion.Size = new System.Drawing.Size(224, 49);
-            this.cbHoteIdHabitacion.StartIndex = 0;
-            this.cbHoteIdHabitacion.TabIndex = 35;
             // 
             // cbTipoHabitacion
             // 
@@ -234,6 +211,35 @@
             this.txtIdHabitacion.TrailingIcon = null;
             this.txtIdHabitacion.UseSystemPasswordChar = false;
             // 
+            // txtHotelIdHabitacion
+            // 
+            this.txtHotelIdHabitacion.AnimateReadOnly = false;
+            this.txtHotelIdHabitacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtHotelIdHabitacion.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtHotelIdHabitacion.Depth = 0;
+            this.txtHotelIdHabitacion.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtHotelIdHabitacion.HideSelection = true;
+            this.txtHotelIdHabitacion.Hint = "HotelId";
+            this.txtHotelIdHabitacion.LeadingIcon = null;
+            this.txtHotelIdHabitacion.Location = new System.Drawing.Point(395, 183);
+            this.txtHotelIdHabitacion.MaxLength = 32767;
+            this.txtHotelIdHabitacion.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtHotelIdHabitacion.Name = "txtHotelIdHabitacion";
+            this.txtHotelIdHabitacion.PasswordChar = '\0';
+            this.txtHotelIdHabitacion.PrefixSuffixText = null;
+            this.txtHotelIdHabitacion.ReadOnly = true;
+            this.txtHotelIdHabitacion.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtHotelIdHabitacion.SelectedText = "";
+            this.txtHotelIdHabitacion.SelectionLength = 0;
+            this.txtHotelIdHabitacion.SelectionStart = 0;
+            this.txtHotelIdHabitacion.ShortcutsEnabled = true;
+            this.txtHotelIdHabitacion.Size = new System.Drawing.Size(250, 48);
+            this.txtHotelIdHabitacion.TabIndex = 36;
+            this.txtHotelIdHabitacion.TabStop = false;
+            this.txtHotelIdHabitacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtHotelIdHabitacion.TrailingIcon = null;
+            this.txtHotelIdHabitacion.UseSystemPasswordChar = false;
+            // 
             // RegistrarHabitación
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,6 +267,6 @@
         private MaterialSkin.Controls.MaterialTextBox2 txtNumeroHabitacion;
         private MaterialSkin.Controls.MaterialTextBox2 txtIdHabitacion;
         private MaterialSkin.Controls.MaterialComboBox cbTipoHabitacion;
-        private MaterialSkin.Controls.MaterialComboBox cbHoteIdHabitacion;
+        private MaterialSkin.Controls.MaterialTextBox2 txtHotelIdHabitacion;
     }
 }

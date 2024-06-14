@@ -47,7 +47,7 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(23, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(205, 29);
+            this.label8.Size = new System.Drawing.Size(141, 20);
             this.label8.TabIndex = 18;
             this.label8.Text = "Registrar cliente";
             // 
@@ -142,6 +142,7 @@
             this.btnRegistrarCliente.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnRegistrarCliente.UseAccentColor = false;
             this.btnRegistrarCliente.UseVisualStyleBackColor = true;
+            this.btnRegistrarCliente.Click += new System.EventHandler(this.btnRegistrarCliente_Click);
             // 
             // txtTelefonoCliente
             // 

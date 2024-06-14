@@ -14,6 +14,7 @@ namespace Las_Amapolas.Clases
         public int Capacidad { get; set; }
         public double PrecioPorNoche { get; set; }
         public string HotelId { get; set; }
+    
         public Habitación(string HabitacionId, string Numero_p, string Tipo_p, int Capacidad_p, double PrecioPorNoche_p, string HotelId_p)
         {
 

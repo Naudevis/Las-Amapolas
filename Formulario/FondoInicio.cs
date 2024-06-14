@@ -45,10 +45,10 @@ namespace Las_Amapolas.Formulario
         private void FondoInicio_Load(object sender, EventArgs e)
 
         {
-            lblId.Text += RegistrarHotel.VIdHotel;
-            lblDireccion.Text += RegistrarHotel.VDireccionHotel;
-            lblEstrellas.Text += RegistrarHotel.VEstrellasHotel;
-            lblPais.Text += RegistrarHotel.VPaisHotel;
+            lblId.Text += Login.objHotel.HotelId;
+            lblDireccion.Text += Login.objHotel.Direccion;
+            lblEstrellas.Text += Login.objHotel.Estrellas;
+            lblPais.Text += Login.objHotel.Pais;
         }
     }
 }

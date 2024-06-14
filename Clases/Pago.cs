@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Las_Amapolas.Clases
 {
-    internal class Pago
+    public class Pago
     {
         public int Id { get; set; }
         public string ReservaId { get; set; }
