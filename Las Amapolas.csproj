@@ -64,6 +64,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulario\Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario\Data.Designer.cs">
+      <DependentUpon>Data.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formulario\FondoInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formulario\Data.resx">
+      <DependentUpon>Data.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formulario\FondoInicio.resx">
       <DependentUpon>FondoInicio.cs</DependentUpon>
     </EmbeddedResource>

@@ -102,6 +102,7 @@
             this.buscarHabitaciToolStripMenuItem.Name = "buscarHabitaciToolStripMenuItem";
             this.buscarHabitaciToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.buscarHabitaciToolStripMenuItem.Text = "Buscar habitación";
+            this.buscarHabitaciToolStripMenuItem.Click += new System.EventHandler(this.buscarHabitaciToolStripMenuItem_Click);
             // 
             // registrarHabitaciónToolStripMenuItem
             // 
@@ -124,6 +125,7 @@
             this.buscarReservasToolStripMenuItem.Name = "buscarReservasToolStripMenuItem";
             this.buscarReservasToolStripMenuItem.Size = new System.Drawing.Size(277, 34);
             this.buscarReservasToolStripMenuItem.Text = "Buscar reservación";
+            this.buscarReservasToolStripMenuItem.Click += new System.EventHandler(this.buscarReservasToolStripMenuItem_Click);
             // 
             // regiToolStripMenuItem
             // 
@@ -144,8 +146,9 @@
             // buscarClienteToolStripMenuItem
             // 
             this.buscarClienteToolStripMenuItem.Name = "buscarClienteToolStripMenuItem";
-            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
+            this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.buscarClienteToolStripMenuItem.Text = "Buscar cliente";
+            this.buscarClienteToolStripMenuItem.Click += new System.EventHandler(this.buscarClienteToolStripMenuItem_Click);
             // 
             // regitrarClienteToolStripMenuItem
             // 
@@ -166,8 +169,9 @@
             // buscarPagoToolStripMenuItem
             // 
             this.buscarPagoToolStripMenuItem.Name = "buscarPagoToolStripMenuItem";
-            this.buscarPagoToolStripMenuItem.Size = new System.Drawing.Size(212, 34);
+            this.buscarPagoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.buscarPagoToolStripMenuItem.Text = "Buscar pago";
+            this.buscarPagoToolStripMenuItem.Click += new System.EventHandler(this.buscarPagoToolStripMenuItem_Click);
             // 
             // hacerPagoToolStripMenuItem
             // 
@@ -188,8 +192,9 @@
             // buscarFacturaToolStripMenuItem
             // 
             this.buscarFacturaToolStripMenuItem.Name = "buscarFacturaToolStripMenuItem";
-            this.buscarFacturaToolStripMenuItem.Size = new System.Drawing.Size(224, 34);
+            this.buscarFacturaToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.buscarFacturaToolStripMenuItem.Text = "Buscar factura";
+            this.buscarFacturaToolStripMenuItem.Click += new System.EventHandler(this.buscarFacturaToolStripMenuItem_Click);
             // 
             // facturarToolStripMenuItem
             // 
@@ -210,8 +215,9 @@
             // buscarEmpleadoToolStripMenuItem
             // 
             this.buscarEmpleadoToolStripMenuItem.Name = "buscarEmpleadoToolStripMenuItem";
-            this.buscarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(268, 34);
+            this.buscarEmpleadoToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.buscarEmpleadoToolStripMenuItem.Text = "Buscar empleado";
+            this.buscarEmpleadoToolStripMenuItem.Click += new System.EventHandler(this.buscarEmpleadoToolStripMenuItem_Click);
             // 
             // registrarEmpleadoToolStripMenuItem
             // 

@@ -15,6 +15,7 @@ namespace Las_Amapolas.Formulario
 {
     public partial class Las_Amapolas : MaterialForm
     {
+        public static string Campo = "";
         public Las_Amapolas()
         {
             InitializeComponent();
@@ -182,6 +183,61 @@ namespace Las_Amapolas.Formulario
             contenedor.Controls.Clear();
 
             FondoInicio fondoInicio = new FondoInicio();
+
+            // Le indicamos que no es el principal (sino que es secundario)
+            fondoInicio.TopLevel = false;
+            // Permite hacer scroll en caso de desbordamiento de info
+            fondoInicio.AutoScroll = true;
+            // Quitamos
+            fondoInicio.FormBorderStyle = FormBorderStyle.None;
+            fondoInicio.Dock = DockStyle.Fill;
+            contenedor.Controls.Add(fondoInicio);
+            fondoInicio.Show();
+        }
+
+        private void buscarHabitaciToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Campo = "habitacion";
+            AbrirData();
+
+        }
+
+
+
+        private void buscarReservasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Campo = "reservación";
+            AbrirData();
+        }
+
+        private void buscarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Campo = "cliente";
+            AbrirData();
+        }
+
+        private void buscarPagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Campo = "pago";
+            AbrirData();
+        }
+
+        private void buscarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Campo = "factura";
+            AbrirData();
+        }
+
+        private void buscarEmpleadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Campo = "empleado";
+            AbrirData();
+        }
+        private void AbrirData()
+        {
+            contenedor.Controls.Clear();
+
+            Data fondoInicio = new Data();
 
             // Le indicamos que no es el principal (sino que es secundario)
             fondoInicio.TopLevel = false;
