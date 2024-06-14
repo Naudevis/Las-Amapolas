@@ -47,7 +47,7 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(12, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(247, 29);
+            this.label8.Size = new System.Drawing.Size(171, 20);
             this.label8.TabIndex = 18;
             this.label8.Text = "Registrar habitación";
             // 
@@ -111,6 +111,7 @@
             this.cbTipoHabitacion.Size = new System.Drawing.Size(224, 49);
             this.cbTipoHabitacion.StartIndex = 0;
             this.cbTipoHabitacion.TabIndex = 34;
+            this.cbTipoHabitacion.Click += new System.EventHandler(this.cbTipoHabitacion_Click);
             // 
             // slCapacidadHabitacion
             // 
@@ -242,6 +243,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "RegistrarHabitación";
             this.Text = "RegistrarHabitación";
+            this.Load += new System.EventHandler(this.RegistrarHabitación_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
