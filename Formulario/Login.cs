@@ -146,7 +146,7 @@ namespace Las_Amapolas.Formulario
         string[] RNumeroHabitacion = { "N0", "N1", "N2" };
         string[] RFechaInicio = { "viernes, 14 de junio de 2024", "viernes, 14 de junio de 2024", "viernes, 14 de junio de 2024" };
         string[] RFechaFin = { "viernes, 28 de junio de 2024", "viernes, 28 de junio de 2024", "viernes, 28 de junio de 2024" };
-        string[] REstado = { "True", "True", "True" };
+        string[] REstado = { " True", " True", " True" };
 
         private void InicializarReservacion()
         {
@@ -314,9 +314,9 @@ namespace Las_Amapolas.Formulario
 
 
         }
-        public static bool ElNumeroEsTexto(string parametro)
+        public static bool ElNumeroEsTexto(string numero)
         {
-            foreach (char texto in parametro)
+            foreach (char texto in numero)
             {
                 if (!char.IsNumber(texto))
                 {

@@ -35,7 +35,7 @@ namespace Las_Amapolas.Formulario.Registrar
                         {
                             if (Login.ExisteCliente(txtClienteId.Text))
                             {
-                                if (Fecha(dateInicioReserva.Text, cbNumeroHabitacionReserva.Text))
+                                if (Fecha(dateInicioReserva.Text, dateFinReserva.Text,cbNumeroHabitacionReserva.Text))
                                 {
 
                                     Reserva ReservaTemporal = new Reserva(
@@ -52,6 +52,10 @@ namespace Las_Amapolas.Formulario.Registrar
                                     txtTipoReservacion.Text = "";
                                     chbEstadoReservacion.Checked = false;
                                     cbNumeroHabitacionReserva.Items.Clear();
+                                }
+                                else
+                                {
+                                    MessageBox.Show($"La fecha está dentro de una reservación existente");
                                 }
                             }
 
@@ -76,6 +80,7 @@ namespace Las_Amapolas.Formulario.Registrar
             string numeroHabitacion = cbNumeroHabitacionReserva.SelectedItem.ToString();
             txtPrecioHabitacion.Text = " " + obtenerPrecioHabitacion(numeroHabitacion);
             txtTipoReservacion.Text = " " + obtenerTipoHabitacion(numeroHabitacion);
+            //RecomedarFecha(cbNumeroHabitacionReserva.Text);
         }
 
         //Cargar número de habitaciones
@@ -136,16 +141,116 @@ namespace Las_Amapolas.Formulario.Registrar
 
 
 
-        private bool Fecha(string fechainicio,string numeroHabitacion)
+        private bool Fecha(string fecha, string fecha2, string NumeroHabitacion1)
         {
+            bool fueraDeRango = false;
+            DateTime NuevaFechaInicio = Convert.ToDateTime(fecha);
+            DateTime NuevaFechaFinal = Convert.ToDateTime(fecha2);
+            DateTime FechaInicio;
+            DateTime FechaFin;
+            string NumeroHabitacion2;
+            string Estado;
             for (int i = 0; i < Login.listReservacion.Count; i++)
             {
-                if (Convert.ToDateTime(Login.listReservacion[i].FechaFin )< Convert.ToDateTime(fechainicio) && Login.listReservacion[i].HabitacionId == numeroHabitacion && Login.listReservacion[i].Estado=="True")
+                FechaInicio = Convert.ToDateTime(Login.listReservacion[i].FechaInicio);
+                FechaFin = Convert.ToDateTime(Login.listReservacion[i].FechaFin);
+                 NumeroHabitacion2 = Login.listReservacion[i].HabitacionId;
+                Estado = Login.listReservacion[i].Estado;
+
+                if (NuevaFechaInicio > DateTime.Now)
                 {
-                    return true;
+                    if ((NumeroHabitacion1 == NumeroHabitacion2) && (Estado == " True") ||  (Estado == "True"))
+                    {
+
+
+                        if (  ((NuevaFechaFinal < FechaInicio && NuevaFechaInicio < FechaInicio) || (NuevaFechaInicio > FechaFin && NuevaFechaFinal > FechaFin)))
+                        {
+
+                            fueraDeRango = true;
+                            
+                        }
+                        else 
+                        {
+
+                            fueraDeRango = false;
+                            return fueraDeRango;
+                            
+                        }
+                    }
                 }
+
             }
-            return false;
+
+
+            return fueraDeRango;
         }
+
+
+        /*
+        private void RecomedarFecha( string NumeroHabitacion1)
+        {
+            bool fueraDeRango = false;
+
+
+            DateTime NuevaFechaInicio = DateTime.Today;
+            DateTime NuevaFechaFinal= DateTime.Today;
+           
+
+            DateTime FechaInicio;
+            DateTime FechaFin;
+            string NumeroHabitacion2;
+            string Estado;
+            int contador = 0;
+            int contador2 = 0;
+            for (int i = 0; i < Login.listReservacion.Count; i++)
+            {
+
+                FechaInicio = Convert.ToDateTime(Login.listReservacion[i].FechaInicio);
+                FechaFin = Convert.ToDateTime(Login.listReservacion[i].FechaFin);
+                NumeroHabitacion2 = Login.listReservacion[i].HabitacionId;
+                Estado = Login.listReservacion[i].Estado;
+
+
+
+                if ((NumeroHabitacion1 == NumeroHabitacion2) && (Estado == " True") || (Estado == "True"))
+                {
+                    contador2++;
+                    if (i % contador2 == 1 && NuevaFechaInicio > FechaFin)
+                    {
+                        contador = 1;
+                        NuevaFechaInicio = FechaFin.AddDays(1);
+                    }
+                    else { contador = 0; }
+
+                }
+                if (contador == 1 && NuevaFechaFinal < FechaInicio)
+                {
+                    fueraDeRango = true;
+                    NuevaFechaFinal = FechaInicio.AddDays(-1);
+
+                    dateInicioReserva.Text = ""+ NuevaFechaInicio;
+                    dateFinReserva.Text= ""+NuevaFechaFinal;
+                            break;
+                }
+            }*/
+                         
+
+
+
+
+                
+
+
+            
+
+
+           
+        
     }
+
+
+
+
+   
 }
+

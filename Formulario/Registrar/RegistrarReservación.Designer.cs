@@ -101,6 +101,7 @@
             this.txtClienteId.Size = new System.Drawing.Size(170, 48);
             this.txtClienteId.TabIndex = 48;
             this.txtClienteId.TabStop = false;
+            this.txtClienteId.Text = "208260696";
             this.txtClienteId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtClienteId.TrailingIcon = null;
             this.txtClienteId.UseSystemPasswordChar = false;
@@ -108,6 +109,8 @@
             // chbEstadoReservacion
             // 
             this.chbEstadoReservacion.AutoSize = true;
+            this.chbEstadoReservacion.Checked = true;
+            this.chbEstadoReservacion.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chbEstadoReservacion.Depth = 0;
             this.chbEstadoReservacion.Location = new System.Drawing.Point(390, 192);
             this.chbEstadoReservacion.Margin = new System.Windows.Forms.Padding(0);
@@ -246,6 +249,7 @@
             // 
             // dateInicioReserva
             // 
+            this.dateInicioReserva.CalendarTitleForeColor = System.Drawing.Color.Red;
             this.dateInicioReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateInicioReserva.Location = new System.Drawing.Point(364, 62);
             this.dateInicioReserva.Name = "dateInicioReserva";
