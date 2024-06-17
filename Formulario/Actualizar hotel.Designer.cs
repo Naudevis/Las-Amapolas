@@ -108,6 +108,7 @@
             this.btnLlamarRegistrarHabitacion.TabIndex = 30;
             this.btnLlamarRegistrarHabitacion.Text = "+";
             this.btnLlamarRegistrarHabitacion.UseVisualStyleBackColor = false;
+            this.btnLlamarRegistrarHabitacion.Click += new System.EventHandler(this.btnLlamarRegistrarHabitacion_Click);
             // 
             // btnRegistrarHotel
             // 

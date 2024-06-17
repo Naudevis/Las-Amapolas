@@ -12,9 +12,9 @@ namespace Las_Amapolas.Clases
         public string ReservaId { get; set; }
         public string ClienteId { get; set; }
         public string EmpleadoId { get; set; }
-        public string MontoTotal { get; set; }
-        public int FechaEmision { get; set; }
-        public Factura(int Id_p, string ReservaId_p, string Cliente_p, string EmpleadoId_p, string MontoTotal_p, int FechaEmision_p)
+        public double MontoTotal { get; set; }
+        public string FechaEmision { get; set; }
+        public Factura(int Id_p, string ReservaId_p, string Cliente_p, string EmpleadoId_p, double MontoTotal_p, string FechaEmision_p)
         {
 
             this.Id = Id_p;

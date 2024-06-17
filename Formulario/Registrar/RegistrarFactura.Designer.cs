@@ -48,7 +48,7 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(45, 44);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(205, 29);
+            this.label8.Size = new System.Drawing.Size(145, 20);
             this.label8.TabIndex = 18;
             this.label8.Text = "Registrar factura";
             // 
@@ -82,7 +82,7 @@
             this.dateEmisionFatura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateEmisionFatura.Location = new System.Drawing.Point(357, 62);
             this.dateEmisionFatura.Name = "dateEmisionFatura";
-            this.dateEmisionFatura.Size = new System.Drawing.Size(388, 30);
+            this.dateEmisionFatura.Size = new System.Drawing.Size(388, 23);
             this.dateEmisionFatura.TabIndex = 45;
             // 
             // txtMontoTotalFatura
@@ -101,7 +101,7 @@
             this.txtMontoTotalFatura.Name = "txtMontoTotalFatura";
             this.txtMontoTotalFatura.PasswordChar = '\0';
             this.txtMontoTotalFatura.PrefixSuffixText = null;
-            this.txtMontoTotalFatura.ReadOnly = false;
+            this.txtMontoTotalFatura.ReadOnly = true;
             this.txtMontoTotalFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtMontoTotalFatura.SelectedText = "";
             this.txtMontoTotalFatura.SelectionLength = 0;
@@ -132,6 +132,7 @@
             this.btnResgistrarFactura.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnResgistrarFactura.UseAccentColor = false;
             this.btnResgistrarFactura.UseVisualStyleBackColor = true;
+            this.btnResgistrarFactura.Click += new System.EventHandler(this.btnResgistrarFactura_Click);
             // 
             // txtEmpleadoIdFatura
             // 
@@ -143,7 +144,7 @@
             this.txtEmpleadoIdFatura.HideSelection = true;
             this.txtEmpleadoIdFatura.Hint = "EmpleadoId";
             this.txtEmpleadoIdFatura.LeadingIcon = null;
-            this.txtEmpleadoIdFatura.Location = new System.Drawing.Point(18, 115);
+            this.txtEmpleadoIdFatura.Location = new System.Drawing.Point(18, 197);
             this.txtEmpleadoIdFatura.MaxLength = 32767;
             this.txtEmpleadoIdFatura.MouseState = MaterialSkin.MouseState.OUT;
             this.txtEmpleadoIdFatura.Name = "txtEmpleadoIdFatura";
@@ -172,13 +173,13 @@
             this.txtClienteIdFatura.HideSelection = true;
             this.txtClienteIdFatura.Hint = "ClienteId";
             this.txtClienteIdFatura.LeadingIcon = null;
-            this.txtClienteIdFatura.Location = new System.Drawing.Point(18, 197);
+            this.txtClienteIdFatura.Location = new System.Drawing.Point(357, 107);
             this.txtClienteIdFatura.MaxLength = 32767;
             this.txtClienteIdFatura.MouseState = MaterialSkin.MouseState.OUT;
             this.txtClienteIdFatura.Name = "txtClienteIdFatura";
             this.txtClienteIdFatura.PasswordChar = '\0';
             this.txtClienteIdFatura.PrefixSuffixText = null;
-            this.txtClienteIdFatura.ReadOnly = false;
+            this.txtClienteIdFatura.ReadOnly = true;
             this.txtClienteIdFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtClienteIdFatura.SelectedText = "";
             this.txtClienteIdFatura.SelectionLength = 0;
@@ -201,7 +202,7 @@
             this.txtReservaIdFatura.HideSelection = true;
             this.txtReservaIdFatura.Hint = "ReservaId";
             this.txtReservaIdFatura.LeadingIcon = null;
-            this.txtReservaIdFatura.Location = new System.Drawing.Point(357, 115);
+            this.txtReservaIdFatura.Location = new System.Drawing.Point(18, 107);
             this.txtReservaIdFatura.MaxLength = 32767;
             this.txtReservaIdFatura.MouseState = MaterialSkin.MouseState.OUT;
             this.txtReservaIdFatura.Name = "txtReservaIdFatura";
@@ -219,6 +220,7 @@
             this.txtReservaIdFatura.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtReservaIdFatura.TrailingIcon = null;
             this.txtReservaIdFatura.UseSystemPasswordChar = false;
+            this.txtReservaIdFatura.TextChanged += new System.EventHandler(this.txtReservaIdFatura_TextChanged);
             // 
             // txtIdFatura
             // 
@@ -236,7 +238,7 @@
             this.txtIdFatura.Name = "txtIdFatura";
             this.txtIdFatura.PasswordChar = '\0';
             this.txtIdFatura.PrefixSuffixText = null;
-            this.txtIdFatura.ReadOnly = false;
+            this.txtIdFatura.ReadOnly = true;
             this.txtIdFatura.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtIdFatura.SelectedText = "";
             this.txtIdFatura.SelectionLength = 0;
@@ -258,6 +260,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "RegistrarFactura";
             this.Text = "RegistrarFactura";
+            this.Load += new System.EventHandler(this.RegistrarFactura_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

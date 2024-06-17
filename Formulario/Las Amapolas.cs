@@ -17,15 +17,12 @@ namespace Las_Amapolas.Formulario
     public partial class Las_Amapolas : MaterialForm
     {
         public static string Campo = "";
-        public Las_Amapolas()
+        public  Las_Amapolas()
         {
             InitializeComponent();
         }
 
-        private void buscarHotelToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void Las_Amapolas_Load(object sender, EventArgs e)
         {
@@ -44,7 +41,21 @@ namespace Las_Amapolas.Formulario
             fondoInicio.Dock = DockStyle.Fill;
             contenedor.Controls.Add(fondoInicio);
             fondoInicio.Show();
+           if (Campo=="habitacion")
+            {
+                contenedor.Controls.Clear();
+                RegistrarHabitación registrarHabitación = new RegistrarHabitación();
 
+                // Le indicamos que no es el principal (sino que es secundario)
+                registrarHabitación.TopLevel = false;
+                // Permite hacer scroll en caso de desbordamiento de info
+                registrarHabitación.AutoScroll = true;
+                // Quitamos
+                registrarHabitación.FormBorderStyle = FormBorderStyle.None;
+                registrarHabitación.Dock = DockStyle.Fill;
+                contenedor.Controls.Add(registrarHabitación);
+                registrarHabitación.Show();
+            }
 
 
 
@@ -232,7 +243,7 @@ namespace Las_Amapolas.Formulario
         {
             contenedor.Controls.Clear();
 
-            Data fondoInicio = new Data();
+            Tabla fondoInicio = new Tabla();
 
             // Le indicamos que no es el principal (sino que es secundario)
             fondoInicio.TopLevel = false;

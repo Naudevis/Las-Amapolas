@@ -40,6 +40,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,11 +65,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formulario\Data.cs">
+    <Compile Include="Formulario\Tabla.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formulario\Data.Designer.cs">
-      <DependentUpon>Data.cs</DependentUpon>
+    <Compile Include="Formulario\Tabla.Designer.cs">
+      <DependentUpon>Tabla.cs</DependentUpon>
     </Compile>
     <Compile Include="Formulario\FondoInicio.cs">
       <SubType>Form</SubType>
@@ -132,8 +133,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formulario\Data.resx">
-      <DependentUpon>Data.cs</DependentUpon>
+    <EmbeddedResource Include="Formulario\Tabla.resx">
+      <DependentUpon>Tabla.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formulario\FondoInicio.resx">
       <DependentUpon>FondoInicio.cs</DependentUpon>
@@ -191,6 +192,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5dd26cd1-d4c1-41d9-9f0e-77fbeca2a4b8_16-9-discover-aspect-ratio_default_0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-limpiar-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-96.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

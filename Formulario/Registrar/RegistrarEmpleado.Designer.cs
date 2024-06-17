@@ -47,7 +47,7 @@
             this.label8.ForeColor = System.Drawing.Color.Blue;
             this.label8.Location = new System.Drawing.Point(24, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(244, 29);
+            this.label8.Size = new System.Drawing.Size(166, 20);
             this.label8.TabIndex = 18;
             this.label8.Text = "Registrar empleado";
             // 
@@ -171,6 +171,7 @@
             this.btnRegistrarEmpleado.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.btnRegistrarEmpleado.UseAccentColor = false;
             this.btnRegistrarEmpleado.UseVisualStyleBackColor = true;
+            this.btnRegistrarEmpleado.Click += new System.EventHandler(this.btnRegistrarEmpleado_Click);
             // 
             // txtPosicionEmpleado
             // 

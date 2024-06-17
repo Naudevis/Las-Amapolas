@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialCard1 = new MaterialSkin.Controls.MaterialCard();
             this.txtPassword = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtUsuario = new MaterialSkin.Controls.MaterialTextBox2();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.materialCard1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             this.materialButton1.Depth = 0;
             this.materialButton1.HighEmphasis = true;
             this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(411, 309);
+            this.materialButton1.Location = new System.Drawing.Point(478, 344);
             this.materialButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
@@ -56,19 +57,6 @@
             this.materialButton1.UseVisualStyleBackColor = true;
             this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(281, 106);
-            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(249, 19);
-            this.materialLabel1.TabIndex = 6;
-            this.materialLabel1.Text = "Bienvenidos al hotel Las Amapolas";
-            // 
             // materialCard1
             // 
             this.materialCard1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -76,12 +64,12 @@
             this.materialCard1.Controls.Add(this.txtUsuario);
             this.materialCard1.Depth = 0;
             this.materialCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialCard1.Location = new System.Drawing.Point(283, 134);
+            this.materialCard1.Location = new System.Drawing.Point(362, 135);
             this.materialCard1.Margin = new System.Windows.Forms.Padding(9);
             this.materialCard1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialCard1.Name = "materialCard1";
             this.materialCard1.Padding = new System.Windows.Forms.Padding(9);
-            this.materialCard1.Size = new System.Drawing.Size(219, 162);
+            this.materialCard1.Size = new System.Drawing.Size(207, 196);
             this.materialCard1.TabIndex = 3;
             // 
             // txtPassword
@@ -94,7 +82,7 @@
             this.txtPassword.HideSelection = true;
             this.txtPassword.Hint = "Contraseña";
             this.txtPassword.LeadingIcon = null;
-            this.txtPassword.Location = new System.Drawing.Point(26, 95);
+            this.txtPassword.Location = new System.Drawing.Point(23, 115);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.MaxLength = 32767;
             this.txtPassword.MouseState = MaterialSkin.MouseState.OUT;
@@ -125,7 +113,7 @@
             this.txtUsuario.HideSelection = true;
             this.txtUsuario.Hint = "Usuario";
             this.txtUsuario.LeadingIcon = null;
-            this.txtUsuario.Location = new System.Drawing.Point(26, 31);
+            this.txtUsuario.Location = new System.Drawing.Point(23, 36);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsuario.MaxLength = 32767;
             this.txtUsuario.MouseState = MaterialSkin.MouseState.OUT;
@@ -146,13 +134,32 @@
             this.txtUsuario.TrailingIcon = null;
             this.txtUsuario.UseSystemPasswordChar = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("PMingLiU-ExtB", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(186, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(430, 21);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "BIENVENIDOS AL HOTEL LAS AMAPOLAS";
+            // 
+            // label2
+            // 
+            this.label2.Image = global::Las_Amapolas.Properties.Resources.icons8_usuario_96;
+            this.label2.Location = new System.Drawing.Point(215, 171);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 85);
+            this.label2.TabIndex = 8;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.materialButton1);
-            this.Controls.Add(this.materialLabel1);
             this.Controls.Add(this.materialCard1);
             this.Name = "Login";
             this.Text = "Login";
@@ -166,9 +173,10 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialButton materialButton1;
-        private MaterialSkin.Controls.MaterialLabel materialLabel1;
         private MaterialSkin.Controls.MaterialCard materialCard1;
         private MaterialSkin.Controls.MaterialTextBox2 txtPassword;
         private MaterialSkin.Controls.MaterialTextBox2 txtUsuario;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

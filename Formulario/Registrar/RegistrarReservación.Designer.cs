@@ -30,10 +30,10 @@
         {
             this.label8 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtClienteId = new MaterialSkin.Controls.MaterialTextBox2();
             this.chbEstadoReservacion = new MaterialSkin.Controls.MaterialCheckbox();
             this.txtTipoReservacion = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtPrecioHabitacion = new MaterialSkin.Controls.MaterialTextBox2();
-            this.cbClienteReserva = new MaterialSkin.Controls.MaterialComboBox();
             this.cbNumeroHabitacionReserva = new MaterialSkin.Controls.MaterialComboBox();
             this.btnLlamarRegistrarCliente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,10 +59,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtClienteId);
             this.panel1.Controls.Add(this.chbEstadoReservacion);
             this.panel1.Controls.Add(this.txtTipoReservacion);
             this.panel1.Controls.Add(this.txtPrecioHabitacion);
-            this.panel1.Controls.Add(this.cbClienteReserva);
             this.panel1.Controls.Add(this.cbNumeroHabitacionReserva);
             this.panel1.Controls.Add(this.btnLlamarRegistrarCliente);
             this.panel1.Controls.Add(this.label2);
@@ -75,6 +75,35 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(721, 381);
             this.panel1.TabIndex = 19;
+            // 
+            // txtClienteId
+            // 
+            this.txtClienteId.AnimateReadOnly = false;
+            this.txtClienteId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtClienteId.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtClienteId.Depth = 0;
+            this.txtClienteId.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtClienteId.HideSelection = true;
+            this.txtClienteId.Hint = "ID del Cliente";
+            this.txtClienteId.LeadingIcon = null;
+            this.txtClienteId.Location = new System.Drawing.Point(26, 122);
+            this.txtClienteId.MaxLength = 32767;
+            this.txtClienteId.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtClienteId.Name = "txtClienteId";
+            this.txtClienteId.PasswordChar = '\0';
+            this.txtClienteId.PrefixSuffixText = null;
+            this.txtClienteId.ReadOnly = false;
+            this.txtClienteId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtClienteId.SelectedText = "";
+            this.txtClienteId.SelectionLength = 0;
+            this.txtClienteId.SelectionStart = 0;
+            this.txtClienteId.ShortcutsEnabled = true;
+            this.txtClienteId.Size = new System.Drawing.Size(170, 48);
+            this.txtClienteId.TabIndex = 48;
+            this.txtClienteId.TabStop = false;
+            this.txtClienteId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtClienteId.TrailingIcon = null;
+            this.txtClienteId.UseSystemPasswordChar = false;
             // 
             // chbEstadoReservacion
             // 
@@ -114,7 +143,7 @@
             this.txtTipoReservacion.SelectionLength = 0;
             this.txtTipoReservacion.SelectionStart = 0;
             this.txtTipoReservacion.ShortcutsEnabled = true;
-            this.txtTipoReservacion.Size = new System.Drawing.Size(250, 48);
+            this.txtTipoReservacion.Size = new System.Drawing.Size(230, 48);
             this.txtTipoReservacion.TabIndex = 46;
             this.txtTipoReservacion.TabStop = false;
             this.txtTipoReservacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -143,35 +172,12 @@
             this.txtPrecioHabitacion.SelectionLength = 0;
             this.txtPrecioHabitacion.SelectionStart = 0;
             this.txtPrecioHabitacion.ShortcutsEnabled = true;
-            this.txtPrecioHabitacion.Size = new System.Drawing.Size(250, 48);
+            this.txtPrecioHabitacion.Size = new System.Drawing.Size(230, 48);
             this.txtPrecioHabitacion.TabIndex = 45;
             this.txtPrecioHabitacion.TabStop = false;
             this.txtPrecioHabitacion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtPrecioHabitacion.TrailingIcon = null;
             this.txtPrecioHabitacion.UseSystemPasswordChar = false;
-            // 
-            // cbClienteReserva
-            // 
-            this.cbClienteReserva.AutoResize = false;
-            this.cbClienteReserva.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.cbClienteReserva.Depth = 0;
-            this.cbClienteReserva.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.cbClienteReserva.DropDownHeight = 174;
-            this.cbClienteReserva.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbClienteReserva.DropDownWidth = 121;
-            this.cbClienteReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.cbClienteReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.cbClienteReserva.FormattingEnabled = true;
-            this.cbClienteReserva.Hint = "ClienteId";
-            this.cbClienteReserva.IntegralHeight = false;
-            this.cbClienteReserva.ItemHeight = 43;
-            this.cbClienteReserva.Location = new System.Drawing.Point(26, 112);
-            this.cbClienteReserva.MaxDropDownItems = 4;
-            this.cbClienteReserva.MouseState = MaterialSkin.MouseState.OUT;
-            this.cbClienteReserva.Name = "cbClienteReserva";
-            this.cbClienteReserva.Size = new System.Drawing.Size(170, 49);
-            this.cbClienteReserva.StartIndex = 0;
-            this.cbClienteReserva.TabIndex = 44;
             // 
             // cbNumeroHabitacionReserva
             // 
@@ -185,17 +191,18 @@
             this.cbNumeroHabitacionReserva.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.cbNumeroHabitacionReserva.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.cbNumeroHabitacionReserva.FormattingEnabled = true;
-            this.cbNumeroHabitacionReserva.Hint = "NúmeroHabitación";
+            this.cbNumeroHabitacionReserva.Hint = "Número de Habitación";
             this.cbNumeroHabitacionReserva.IntegralHeight = false;
             this.cbNumeroHabitacionReserva.ItemHeight = 43;
             this.cbNumeroHabitacionReserva.Location = new System.Drawing.Point(26, 192);
             this.cbNumeroHabitacionReserva.MaxDropDownItems = 4;
             this.cbNumeroHabitacionReserva.MouseState = MaterialSkin.MouseState.OUT;
             this.cbNumeroHabitacionReserva.Name = "cbNumeroHabitacionReserva";
-            this.cbNumeroHabitacionReserva.Size = new System.Drawing.Size(170, 49);
+            this.cbNumeroHabitacionReserva.Size = new System.Drawing.Size(230, 49);
             this.cbNumeroHabitacionReserva.StartIndex = 0;
             this.cbNumeroHabitacionReserva.TabIndex = 43;
             this.cbNumeroHabitacionReserva.TextChanged += new System.EventHandler(this.cbHabitacionIdReserva_TextChanged);
+            this.cbNumeroHabitacionReserva.Click += new System.EventHandler(this.cbNumeroHabitacionReserva_Click);
             // 
             // btnLlamarRegistrarCliente
             // 
@@ -208,6 +215,7 @@
             this.btnLlamarRegistrarCliente.TabIndex = 42;
             this.btnLlamarRegistrarCliente.Text = "+";
             this.btnLlamarRegistrarCliente.UseVisualStyleBackColor = false;
+            this.btnLlamarRegistrarCliente.Click += new System.EventHandler(this.btnLlamarRegistrarCliente_Click);
             // 
             // label2
             // 
@@ -234,6 +242,7 @@
             this.dateFinReserva.Name = "dateFinReserva";
             this.dateFinReserva.Size = new System.Drawing.Size(300, 24);
             this.dateFinReserva.TabIndex = 38;
+            this.dateFinReserva.Value = new System.DateTime(2024, 6, 16, 21, 20, 37, 0);
             // 
             // dateInicioReserva
             // 
@@ -279,7 +288,7 @@
             this.txtIdReserva.Name = "txtIdReserva";
             this.txtIdReserva.PasswordChar = '\0';
             this.txtIdReserva.PrefixSuffixText = null;
-            this.txtIdReserva.ReadOnly = false;
+            this.txtIdReserva.ReadOnly = true;
             this.txtIdReserva.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtIdReserva.SelectedText = "";
             this.txtIdReserva.SelectionLength = 0;
@@ -320,10 +329,10 @@
         private System.Windows.Forms.DateTimePicker dateFinReserva;
         private System.Windows.Forms.DateTimePicker dateInicioReserva;
         private System.Windows.Forms.Button btnLlamarRegistrarCliente;
-        private MaterialSkin.Controls.MaterialComboBox cbClienteReserva;
         private MaterialSkin.Controls.MaterialComboBox cbNumeroHabitacionReserva;
         private MaterialSkin.Controls.MaterialTextBox2 txtPrecioHabitacion;
         private MaterialSkin.Controls.MaterialTextBox2 txtTipoReservacion;
         private MaterialSkin.Controls.MaterialCheckbox chbEstadoReservacion;
+        private MaterialSkin.Controls.MaterialTextBox2 txtClienteId;
     }
 }

@@ -70,13 +70,12 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(743, 92);
             this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblPais
             // 
             this.lblPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPais.ForeColor = System.Drawing.Color.White;
-            this.lblPais.Location = new System.Drawing.Point(406, 17);
+            this.lblPais.Location = new System.Drawing.Point(375, 17);
             this.lblPais.Name = "lblPais";
             this.lblPais.Size = new System.Drawing.Size(236, 23);
             this.lblPais.TabIndex = 6;
@@ -91,29 +90,26 @@
             this.lblEstrellas.Size = new System.Drawing.Size(197, 39);
             this.lblEstrellas.TabIndex = 5;
             this.lblEstrellas.Text = "Estrellas : ";
-            this.lblEstrellas.Click += new System.EventHandler(this.label5_Click);
             // 
             // lblDireccion
             // 
             this.lblDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.Color.White;
-            this.lblDireccion.Location = new System.Drawing.Point(32, 55);
+            this.lblDireccion.Location = new System.Drawing.Point(70, 59);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(294, 39);
+            this.lblDireccion.Size = new System.Drawing.Size(294, 33);
             this.lblDireccion.TabIndex = 3;
             this.lblDireccion.Text = "Dirección : ";
-            this.lblDireccion.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblId
             // 
             this.lblId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.ForeColor = System.Drawing.Color.White;
-            this.lblId.Location = new System.Drawing.Point(84, 17);
+            this.lblId.Location = new System.Drawing.Point(70, 17);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(181, 23);
             this.lblId.TabIndex = 4;
             this.lblId.Text = "ID : ";
-            this.lblId.Click += new System.EventHandler(this.label4_Click);
             // 
             // FondoInicio
             // 

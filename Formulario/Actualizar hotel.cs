@@ -38,13 +38,36 @@ namespace Las_Amapolas.Formulario.Registrar
 
         private void btnRegistrarHotel_Click(object sender, EventArgs e)
         {
+            if (!Login.espaciosVacios(new object[] { txtIdHotel, txtNombreHotel, txtCiudadHotel, txtPaisHotel, txtDirecionHotel }))
+            {
 
 
-           Login.objHotel.Nombre = txtNombreHotel.Text;
-           Login.objHotel.Direccion = txtDirecionHotel.Text;
-            Login.objHotel.Ciudad = txtCiudadHotel.Text;
-           Login.objHotel.Pais = txtPaisHotel.Text;
-            Login.objHotel.Estrellas = slEstrellasHotel.Value;
+                if (!Login.MayorTresLetras(new object[] { txtIdHotel, txtNombreHotel, txtCiudadHotel, txtPaisHotel, txtDirecionHotel }))
+                {
+
+
+
+                    if (!Login.EsTexto(new object[] { txtPaisHotel, txtNombreHotel }))
+                    {
+                        if (slEstrellasHotel.Value > 0)
+                        {
+                            Login.objHotel.Nombre = txtNombreHotel.Text;
+                            Login.objHotel.Direccion = txtDirecionHotel.Text;
+                            Login.objHotel.Ciudad = txtCiudadHotel.Text;
+                            Login.objHotel.Pais = txtPaisHotel.Text;
+                            Login.objHotel.Estrellas = slEstrellasHotel.Value;
+
+                            MessageBox.Show("La actualización fue exitosa");
+                        }
+                        else
+                        {
+                            MessageBox.Show("La cantidad de estrellas tiene que ser mayor a 0");
+                        }
+                    }
+
+                }
+
+            }
         }
 
 
@@ -56,6 +79,17 @@ namespace Las_Amapolas.Formulario.Registrar
                 cbHabitacionesHotel.Items.Add(habitacion.HabitacionId);
 
             }
+        }
+
+        private void btnLlamarRegistrarHabitacion_Click(object sender, EventArgs e)
+        {
+
+
+
+            RegistrarHabitación s = new RegistrarHabitación();
+            s.Show();
+
+
         }
     }
 }
